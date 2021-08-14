@@ -17,7 +17,7 @@ const playerSelectionContainer =  document.querySelector("#player-selection");
 // Adding Event Listners to Buttons
 buttons.forEach((button) => {
     button.addEventListener("click", () =>{
-        if(playerWin < 5 && computerWin < 5){
+        if(playerWin < 5 && computerWin < 5 && button.id != "reset"){
             game(playerSelection(button.id), computerSelection())  
         }
         if(button.id == "reset"){
@@ -39,11 +39,11 @@ function computerSelection() {
 
 //Reset Button Functionality
 function reset() {
-    computerWinContainer.textContent = "Computer Wins: 0"
-    playerWinContainer.textContent = "Player Wins: 0"
-    playerSelectionContainer.textContent = "Player Selection: 0"
-    computerSelectionContainer.textContent = "Computer Selection: 0"
-    results.textContent = "Result:"
+    computerWinContainer.textContent = "0"
+    playerWinContainer.textContent = "0"
+    playerSelectionContainer.textContent = ""
+    computerSelectionContainer.textContent = ""
+    results.textContent = ""
     playerWin = 0;
     computerWin = 0;
 }
