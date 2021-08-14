@@ -1,0 +1,38 @@
+body{
+    background-color:darkgrey;
+    font-family: 'Oswald', sans-serif;
+}
+#main-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+#mid-container{
+    padding-top: 75px;
+}
+
+.player-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    border: 4px solid black
+    
+}
+
+
+.name{
+    font-size: 6em;
+}
+.name--player{
+    color: blue;
+}
+.name--computer{
+    color: red;
+}
+
+.score{
+    font-size: 10em;
+
+}

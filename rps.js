@@ -39,18 +39,18 @@ function computerSelection() {
 
 //Reset Button Functionality
 function reset() {
-    computerWinContainer.innerHTML = "Computer Wins: 0"
-    playerWinContainer.innerHTML = "Player Wins: 0"
-    playerSelectionContainer.innerHTML = "Player Selection: 0"
-    computerSelectionContainer.innerHTML = "Computer Selection: 0"
-    results.innerHTML = "Result:"
+    computerWinContainer.textContent = "Computer Wins: 0"
+    playerWinContainer.textContent = "Player Wins: 0"
+    playerSelectionContainer.textContent = "Player Selection: 0"
+    computerSelectionContainer.textContent = "Computer Selection: 0"
+    results.textContent = "Result:"
     playerWin = 0;
     computerWin = 0;
 }
 // Game Function
 function game(playerSelection, computerSelection) {
-   playerSelectionContainer.innerHTML = "Player Selection: " + playerSelection;
-    computerSelectionContainer.innerHTML = "Computer Selection: " + computerSelection
+   playerSelectionContainer.textContent = "Player Selection: " + playerSelection;
+    computerSelectionContainer.textContent = "Computer Selection: " + computerSelection
     // tie
     if( playerSelection == computerSelection){
         
@@ -78,15 +78,15 @@ function game(playerSelection, computerSelection) {
     }
   
     //Update Player Win Totals
-    playerWinContainer.innerHTML = "Player Wins: " + playerWin.toString();
-    computerWinContainer.innerHTML = "Computer Wins: " + computerWin.toString();
+    playerWinContainer.textContent = playerWin.toString();
+    computerWinContainer.textContent = computerWin.toString();
 
     //Check Win Max
     if(playerWin >= 5){
-    results.innerHTML = "Result: You Win!"
+    results.textContent = "Win!"
     
     }else if (computerWin >= 5){
-    results.innerHTML = "Result: Computer Wins!"
+    results.textContent = "lost"
     
     }
 }
