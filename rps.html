@@ -20,15 +20,27 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="main-container">
+            <div class="title-container">
+                <div class="title">
+                    Rock - Paper - Scissors
+                </div>
+                <div class="subtitle">
+                    First to Five
+                </div>
+            </div>
+        
             <div class="player-container">
                 <div id="player-name" class="name name--player">
                     Player
                 </div>
                 <div id="player-win" class="score">0</div>
                 <div id="player-selection" class='selection'></div>  
+                <div id="player-wins" class="win-count">
+                
+                </div>
             </div>
             <div id="mid-container">
-            <div style="font-size: 3em;">VS</div> 
+            <div style="font-size: 3em; color: #A3F7B5">VS</div> 
             <div id='results-container'>
                 
             </div>  
@@ -37,17 +49,29 @@
                 <div id="computer-name" class="name name--computer">
                     Computer
                 </div>
-                <div id="computer-win" class="score">0</div>
+                <div id="computer-score" class="score">0</div>
                 <div id="computer-selection" class="selection"></div>
+                <div id="computer-wins" class="win-count">
+                
+                </div>
             </div>
         </div>
         <div id="btn-container">
-                <button id="0" class="dot">Rock</button>
-                <button id="1" class="dot middle-dot">Paper</button>
-                <button id="2" class="dot">Scissors</button>
+                <button id="0" class='dot dot-hover'><img src="https://img.icons8.com/ios-filled/50/000000/coal.png"/></button>
+                <button id="1" class="dot dot-hover middle-dot"><img src="https://img.icons8.com/glyph-neue/50/000000/paper.png"/></button>
+                <button id="2" class="dot dot-hover"><img src="https://img.icons8.com/ios-filled/50/000000/scissors.png"/></button>
             </div>
+        
+     
+
+<!----Win Modal-->
+      <div id='win-modal' class="hidden">
+        <div class='modal-title'>Test</div>
         <button id='reset'>Reset</button>
-        <script src="" async defer></script>
-        <script src='rps.js'></script>
-    </body>
+      </div>
+
+    </body>   
+    <script src="" async defer>
+    </script> <script src='rps.js'></script>
+
 </html>
