@@ -13,6 +13,7 @@ const computerWinContainer = document.querySelector("#computer-win");
 const playerWinContainer = document.querySelector("#player-win");
 const computerSelectionContainer = document.querySelector("#computer-selection");
 const playerSelectionContainer =  document.querySelector("#player-selection");
+const changeButton = document.querySelector(".change-text");
 
 // Adding Event Listners to Buttons
 buttons.forEach((button) => {
@@ -25,6 +26,7 @@ buttons.forEach((button) => {
         }
     } )
 });
+
 
 // Player and Computer Selections
 function playerSelection(int) {
@@ -39,6 +41,7 @@ function computerSelection() {
 
 //Reset Button Functionality
 function reset() {
+    console.log("rest runs")
     computerWinContainer.textContent = "0"
     playerWinContainer.textContent = "0"
     playerSelectionContainer.textContent = ""
