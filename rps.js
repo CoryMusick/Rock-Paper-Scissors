@@ -52,8 +52,8 @@ function reset() {
 }
 // Game Function
 function game(playerSelection, computerSelection) {
-   playerSelectionContainer.textContent = "Player Selection: " + playerSelection;
-    computerSelectionContainer.textContent = "Computer Selection: " + computerSelection
+  playerSelectionContainer.textContent = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
+  computerSelectionContainer.textContent = computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1);
     // tie
     if( playerSelection == computerSelection){
         
